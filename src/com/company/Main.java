@@ -70,5 +70,16 @@ public class Main {
         grupa1.addKaczkowate(kpo3);
 
         grupa1.kwa();
+        System.out.println("Kwakniec: " + ornitolog.getKwakniecia());
+        // factory
+        KaczkowateAbstactFactory kaczkowateFactory = new KaczkowateFactory();
+        KaczkowateAbstactFactory observableKaczkowateFactory = new ObservableKaczkowateFactory();
+
+        Kaczkowate observedKurczak = observableKaczkowateFactory.getKurczak();
+        Kaczkowate simpleKaczka = kaczkowateFactory.getKaczka();
+        ((KaczkowatePodOkiem)observedKurczak).registerObserver(ornitolog);
+        observedKurczak.kwa();
+        simpleKaczka.kwa();
+        System.out.println("Kwakniec: " + ornitolog.getKwakniecia());
     }
 }
