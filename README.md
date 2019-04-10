@@ -7,8 +7,7 @@ contains following patterns: observer, abstact factory, adapter, singleton, comp
 
 primary goal was to make usage of classes as unified as possible for client, while still offering additional functionalities in clear and flexible manner
 
-flexibility is granted by decorating the base classes, like adapting other types or making the duck observable
-which differs from book example, as i felt that implementing the observer interface in base classes makes them possess
+flexibility is granted by decorating the base classes, like adapting other types or making the duck observable, which differs from book example, as i felt that implementing the observer interface in base classes makes them possess
 behaviour which is clearly not a part of 'duck type' class model and in this case should be viewed as 'additional functionality', a role which decorator suits best -
 ex. of usage with adapter: new KaczkowatePodOkiem(new KurczakAdapter(new Kurczak()));
 
