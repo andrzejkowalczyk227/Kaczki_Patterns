@@ -1,8 +1,8 @@
 # Kaczki_Patterns
 design patterns playground
 
-project has been created as the playground for trying learnt design pattern
-loosely based on example from "head first desing patterns" book
+project has been created as the playground for trying learnt design pattern,
+loosely based on example from "head first desing patterns" book, project
 contains following patterns: observer, abstact factory, adapter, singleton, composite 
 
 primary goal was to make usage of classes as unified as possible for client, while still offering additional functionalities in clear and flexible manner
