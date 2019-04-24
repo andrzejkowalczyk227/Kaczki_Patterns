@@ -14,4 +14,4 @@ ex. of usage with adapter: new KaczkowatePodOkiem(new KurczakAdapter(new Kurczak
 as the process of decorating can be unclear on client side, it is delegated with the usage of abstact factory pattern,
 client can choose concrete factory producing base or decorated duck types, with those being returned
 
-grouping is archieved with recursive collection, delegating calls to leaves and nested groups
+grouping is archieved with recursive collection, delegating calls to tree leaves
