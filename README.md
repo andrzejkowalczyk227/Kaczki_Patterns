@@ -12,6 +12,6 @@ behaviour which is clearly not a part of 'duck type' class model and in this cas
 ex. of usage with adapter: new KaczkowatePodOkiem(new KurczakAdapter(new Kurczak()));
 
 as the process of decorating can be unclear on client side, it is delegated with the usage of abstact factory pattern,
-client can choose concrete factory producing base or decorated duck types, with those being returned
+client can choose concrete factory producing base or decorated duck types
 
 grouping is archieved with recursive collection, delegating calls to nested elements.
